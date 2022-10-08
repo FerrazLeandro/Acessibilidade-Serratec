@@ -1,0 +1,445 @@
+<!DOCTYPE html lang="pt-br">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <title>Acessibilidade Serratec</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="container-fluid text-center mt-1 bg-light">
+      <menu class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-brand">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#content"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      title="Botão para links de navegação"
+                    >
+                      MENU
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#navegacaoViaTab"
+                          >Navegação via TAB</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#ampliacaoReducaoFonte"
+                          >Ampliação e redução de fontes</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#contraste-content"
+                          >Contraste</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#descricaoDasImagensELegendas"
+                          >Descrição das Imagens e Legendas</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#instalacaoVLibras"
+                          >Instalação VLibras</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#normasDeAcessibilidade"
+                          >Normas de Acessibilidade</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#validarDocumentoHtml"
+                          >Validação de documento HTML</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#contato"
+                          >Fale conosco</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </menu>
+    </header>
+
+    <main>
+    <!--HOME-->
+    <div class="container mt-1 text-center" id="content">
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <div class="jumbotron">
+            <h1 tabindex="0">Acessibilidade Digital</h1> 
+            <p>           
+            Este site tem como objetivo compartilhar as boas práticas e
+            diretrizes para aplicação de acessibilidade no desenvolvimento de
+            sites. 
+            </p>          
+          </div>
+          <figure class="slideInLeft figure-home" aria-label="Logo da serratec">
+            <img id="logo-serratec" src="./assets/img/serratecLogo.png" alt="Logo Serratec">
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <div class="figure-home">
+            <img id="home-image" src="./assets/img/image1.png" alt="Imagem Acessibilidade">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTENT-->
+    <div class="container mt-1" id="conteudo-principal">
+      <section id="navegacaoViaTab">
+        <article class="row">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Navegação via TAB</h2>
+              <p class="lead">Orientações</p>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                A navegação dos menus deve seguir a orientação da esquerda para
+                a direita e de cima para baixo.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="ampliacaoReducaoFonte">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Ampliação e redução de fontes</h2>
+              <p class="lead">Orientações</p>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <figure class="figure-content" aria-label="Testeeeee">
+              <img src="./assets/img/image4.png" alt="Imagem de zoom">
+            </figure>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="figure-content">
+              <img src="./assets/img/image4Dark.png" alt="Imagem de zoom preto">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Esse comando deve ficar o mais visível possível. (sugestão em
+                baixo do menu).
+              </li>
+              <li class="list-group-item">
+                As fontes devem iniciar com 24 pixels e possibilitar ampliar e
+                reduzir o seu tamanho.
+              </li>
+              <li class="list-group-item">
+                Utilizar nos menus, fonte de fácil leitura. Por exemplo:
+                <strong>Calibri</strong>,<strong>Arial</strong>,
+                <strong>Tahoma</strong>, etc...
+              </li>
+              <li class="list-group-item">
+                Evitar fontes manuscritas ou serifadas.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="contraste-content">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Contraste</h2>
+              <p class="lead">Orientações</p>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-end">
+            <div
+              class="figure-content"             
+            >
+              <img src="./assets/img/image5.jpeg" alt="Imagem de flor preto e branco">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Destacar cada menu ou botão com moldura ou invertendo a cor.
+                <strong>(sempre aumentando o contraste)</strong>.
+              </li>
+              <li class="list-group-item">
+                Testar contraste nos links abaixo.
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item">
+                    Para verificação de contraste Microsoft. Acesse:
+                    <a
+                      href="https://learn.microsoft.com/pt-br/microsoft-edge/devtools-guide-chromium/accessibility/color-picker" rel="noopener"
+                      >Visite</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    Para verificação de contraste Linux. Acesse:
+                    <a href="https://apps.kde.org/pt-br/kontrast/" rel="noopener"
+                      >Visite</a
+                    >
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="descricaoDasImagensELegendas">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Descrição de Imagens e Legendas</h2>
+              <p class="lead">Orientações</p>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div
+              class="figure-content"              
+            >
+              <img src="./assets/img/image6.jpg" alt="Criança em um lago">              
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div
+              class="figure-content"              
+            >
+              <img src="./assets/img/image6-escalacinza.jpg" alt="Criança em um lago preto e branco">              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                As legendas devem ser inseridas sempre que houver um vídeo ou
+                áudio na página.
+              </li>
+              <li class="list-group-item">
+                Legendas em libras são indicadas, sempre que possível, lembrando
+                que não é a única língua de sinais. Se a tradução for inserida
+                em outro idioma nativo por exemplo, o inglês, a língua a ser
+                utilizada é a ASL – American Sign Language.
+              </li>
+              <li class="list-group-item">
+                Todos os menus ou comandos (botões) devem conter o texto
+                alternativo. Exemplo: botão de pesquisa.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="instalacaoVLibras">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Instalação V-Libras</h2>
+              <p class="lead">Orientações</p>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Acesse o link para obter as orientações para integrar o V-Libras
+                em seus sites.
+                <a
+                  href="https://vlibras.gov.br/doc/widget/index.html?_ga=2.89578971.1514139829.1663673363-1938240529.1663673363" rel="noopener"
+                >
+                  Clique aqui
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="normasDeAcessibilidade">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Normas de Acessibilidade</h2>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Quer conhecer todas as normas de acessibilidade?
+                <a href="https://www.w3.org/TR/WCAG21/" rel="noopener"> Clique aqui </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="validarDocumentoHtml">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">
+                Validar práticas de acessibilidade do documento HTML
+              </h2>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">
+                Para validar práticas de acessibilidade em seu documento HTML
+                com <strong>ASES</strong>. Acesse:
+                <a href="https://asesweb.governoeletronico.gov.br" rel="noopener">
+                  Saiba mais.
+                </a>
+              </li>
+              <li class="list-group-item">
+                Para validar práticas de acessibilidade em seu documento HTML
+                com <strong>Access Monitor</strong>. Acesse:
+                <a href="https://accessmonitor.acessibilidade.gov.pt" rel="noopener">
+                  Saiba mais.
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <article class="row mt-5">
+          <div class="col">
+            <div class="jumbotron">
+              <h2 tabindex="0" class="h2">Fale conosco</h2>
+              <hr>
+            </div>
+          </div>
+        </article>
+        <form class="d-flex-column gap-5" id="formulario-faleconosco">
+          <div class="form-group">  
+            <label for="inputEmail">Email</label>          
+            <input
+              type="email"
+              class="form-control mt-1"
+              id="inputEmail"
+              placeholder="Insira seu email..."
+            />
+          </div>
+          <div class="form-group mt-2"> 
+            <label for="inputMensagem">Mensagem</label>           
+            <textarea
+              class="form-control mt-1"
+              id="inputMensagem"
+              rows="3"
+              placeholder="Insira sua mensagem..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary mt-3"
+            title="Botão para enviar dados."
+          >
+            <span>Enviar</span>
+          </button>
+        </form>
+      </section>
+    </div>
+  </main>
+    <section class="container-fluid">
+      <article class="row">
+        <div class="col d-flex justify-content-end fixed-bottom">
+          <button
+            id="top-button"
+            class="btn btn-primary mt-3 mb-2 hidden-object"
+            onclick="scrollToTop();"
+            title="Botão para inicio"
+          >
+            <img src="./assets/icons/arrow_upward_white.svg" title="Voltar para o inicio">
+          </button>
+        </div>
+      </article>
+    </section>
+
+
+  
+    <!--FOOTER-->
+    <footer class="bg-light text-center text-lg-start mt-5" id="rodape">
+      <div class="text-center p-3">
+        Ciclo de palestras - Residência em TIC Software 2022.2
+      </div>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!--BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--SCRIPT-->
+    <script src="./assets/js/script.js"></script>
+    
+  </body>
+</html>
